@@ -18,7 +18,7 @@ WORKDIR /explorer
 
 ENV UPDATES V8
 
-RUN git clone https://github.com/Aviator-Coding/ips-explorer.git . && \
+RUN git clone https://github.com/telostia/smrtc-exp.git . && \
    # git checkout $EXPLORER_VERSION && \
     mkdir /explorer/settings && \
     ln -s /explorer/settings/settings.json /explorer/settings.json &&\
