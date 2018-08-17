@@ -23,8 +23,10 @@ apt install -y software-properties-common && add-apt-repository ppa:bitcoin/bitc
 cd /root
 
 #building docker
-cd /root/solarium/src
-rm /root/solarium/src/Dockerfile
-wget git remote add origin https://raw.githubusercontent.com/telostia/smrtc-exp-docker/master/Dockerfile
+cd 
+rm /root/Dockerfile
+wget https://raw.githubusercontent.com/telostia/smrtc-exp-docker/master/entrypoint.sh
+wget https://raw.githubusercontent.com/telostia/smrtc-exp-docker/master/supervisord.conf
+wget https://raw.githubusercontent.com/telostia/smrtc-exp-docker/master/Dockerfile
 docker build -t "smrtc-explorer" .
 

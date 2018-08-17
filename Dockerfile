@@ -1,6 +1,6 @@
 FROM node:latest
 
-ENV EXPLORER_VERSION v1.7.2
+ENV EXPLORER_VERSION v1.7.1
 
 
 RUN apt-get update && \
